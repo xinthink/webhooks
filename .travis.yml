@@ -5,11 +5,11 @@ cache: yarn
 install: (cd functions && yarn)
 before_script:
   - |
-    echo -e "export const BOT = {
-      token: '',
-      apiPrefix: '',
-      chatId: '',
-    };" > functions/src/local.ts
+  echo -e "export const BOT = {
+    token: '',
+    apiPrefix: '',
+    chatId: '',
+  };" > functions/src/local.ts
   - cat functions/src/local.ts
 script: (cd functions && yarn build)
 

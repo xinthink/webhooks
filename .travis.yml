@@ -1,0 +1,9 @@
+language: node_js
+node_js: node
+cache: yarn
+
+install: (cd functions && yarn)
+script: (cd functions && yarn build)
+
+notifications:
+  webhooks: https://us-central1-hook-a4883.cloudfunctions.net/travisTelegram

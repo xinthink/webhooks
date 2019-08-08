@@ -8,7 +8,7 @@
 First, get your own [Telegram Bot] token.
 
 Create file *functions/src/local.ts*, with content:
-  ```
+  ```js
   export const BOT = {
     token: '<telegram-bot-token>',
     apiPrefix: 'https://api.telegram.org/bot<telegram-bot-token>',
@@ -27,7 +27,7 @@ Finally, don't forget to add your bot to the Channel or Group!
 
 - Run `firebase init`
 - or create *.firebaserc* manually
-  ```
+  ```json
   {
     "projects": {
       "default": "<firebase-project-id>"

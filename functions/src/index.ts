@@ -102,7 +102,7 @@ function _sendTravisResultToTelegram(
     repository, commit, branch, message, author_name,
   } = payload;
   const icon = status === 0 ? '✅' : '🔴';
-  const text = `${icon} [${repository.name} Build#${number}](${build_url}) *${status_message}* in ${duration}s.
+  const text = `${icon} [${repository.name} #${number}](${build_url}) *${status_message}* in ${duration}s.
 
     \`${branch}\` \`${commit.substr(0, 7)}\` by *${author_name}*
 

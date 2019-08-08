@@ -5,7 +5,7 @@ cache: yarn
 install: (cd functions && yarn)
 before_script:
   - |
-  echo -e "export const BOT = {
+    echo -e "export const BOT = {
     token: '',
     apiPrefix: '',
     chatId: '',

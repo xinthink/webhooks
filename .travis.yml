@@ -9,7 +9,8 @@ before_script:
       token: '',
       apiPrefix: '',
       chatId: '',
-    };" > functions/local.ts
+    };" > functions/src/local.ts
+  - cat functions/src/local.ts
 script: (cd functions && yarn build)
 
 notifications:
